@@ -74,10 +74,15 @@ h3{
 
 .idiomas{
     display: flex;
+    text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px 0 15px;
+    padding: 10px 15px 15px;
+}
+
+#idioma{
+    font-size: 3.0vh;
 }
 
 #idioma:hover{
@@ -154,7 +159,6 @@ h3{
 
 @media screen and (min-width: 768px) {
     .container_textos{
-        text-align: center;
         padding: 10px 20px;
     }
     
@@ -162,12 +166,17 @@ h3{
         font-size: 2.2vh;
     }
 
-    .esconde{
-        display: inline;
-    }
-
     p{
         font-size: 16px;
+    }
+
+    #idioma{
+        font-size: 3vh;
+    }
+
+    .idiomas{
+        margin-left: 80px;
+        margin-right: 80px;
     }
 }
 
@@ -178,5 +187,69 @@ h3{
 
     p{
         font-size: 20px;
+    }
+
+    .esconde{
+        display: inline;
+    }
+
+    .esconde2{
+        display: none;
+    }
+    
+    .idiomas{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    #b{
+        font-size: 3.8vh;
+    }
+
+    #idioma{
+        font-size: 3.5vh;
+    }
+
+    .idiomas{
+        padding: 25px 0;
+    }
+
+    .esconde2{
+        display: inline;
+    }
+
+    .container_textos{
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    header {
+        min-height: 450px;
+        background: linear-gradient(90deg, rgba(145,52,52,1) 0%, rgba(145,52,52,0.47102591036414565) 0%), url(images/header.jpeg) repeat center center;
+    }
+
+    #foto{
+        margin-top: 35px;
+        margin-bottom: 35px;
+        background: linear-gradient(90deg, rgba(145,52,52,1) 0%, rgba(145,52,52,0.47102591036414565) 0%), url(images/foto1.jpeg) repeat top center;
+    }
+
+    .cabecalho{
+        margin-top: 100px;
+    }
+
+    #img{
+        margin: 10px 10px;
+    }
+
+    #destaque{
+        font-size: 4.5vh;
+    }
+
+    .container_logos{
+        margin-left: 300px;
+        margin-right: 300px;
     }
 }
